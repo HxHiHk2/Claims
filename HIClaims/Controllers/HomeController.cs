@@ -28,7 +28,7 @@ namespace HIClaims.Controllers
             if(ModelState.IsValid)
             {
                 CustomerClaim cusomerclaim = new CustomerClaim();
-                if (claim.ClaimedDate.ToString("DD/MM/YYYY")( > DateTime.Now.Date)
+                if (claim.ClaimedDate.ToString("DD/MM/YYYY"))( > DateTime.Now.Date)
                 {
                     ViewData["Error"] = "Claim cannot be in future date";
                     return View("ModalPopup");
